@@ -624,6 +624,22 @@ boolean L8_trapperNinjaLair()
 		}
 	}
 
+	if(auto_haveChestMimic())
+	{
+		if(mimicXp > 200)
+        {
+		auto_log_info("Visiting the DNA bank for three assassins", "blue");
+	    return true;
+       	}
+		if(mimicXp > 100)
+        {
+		auto_log_info("Preparing the mimic for two copied assassins", "blue");
+	    return true;
+       	}
+	    auto_log_info("Chest mimic insufficiently charged for assassin copying", "red");
+    	return false;
+	}
+
 	if(get_property("_sourceTerminalDigitizeMonster") == $monster[Ninja Snowman Assassin])
 	{
 		auto_log_info("Have a digitized Ninja Snowman Assassin, let's put off the Ninja Snowmen Lair", "blue");

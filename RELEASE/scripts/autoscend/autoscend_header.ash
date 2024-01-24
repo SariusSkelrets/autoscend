@@ -533,6 +533,8 @@ boolean auto_canCircadianRhythm();
 boolean auto_circadianRhythmTarget(monster target);
 boolean auto_haveJillOfAllTrades();
 void auto_handleJillOfAllTrades();
+boolean auto_haveChestMimic();
+void auto_handleChestMimic();
 boolean auto_haveBurningLeaves();
 boolean auto_burnLeaves();
 boolean auto_haveCCSC();
