@@ -297,6 +297,10 @@ string auto_combatDefaultStage2(int round, monster enemy, string text)
 		{
 			couldInstaKill = false;
 		}
+		if(auto_have_skill($skill[%fn, lay an egg]) && (WIP_INSERT_CHECK_FOR_DAILY_EGG_CAP))
+		{
+			WIP_INSERT_HERE_SKILL_USE_AND_EGG_USE
+		}
 	}
 	else if(wantToForceDrop(enemy))
 	{

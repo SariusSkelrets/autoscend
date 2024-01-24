@@ -629,11 +629,20 @@ boolean L8_trapperNinjaLair()
 		if(mimicXp > 200)
         {
 		auto_log_info("Visiting the DNA bank for three assassins", "blue");
+		use_familiar($familiar[Chest Mimic]);
+		retval = autoAdv($location[Mimic DNA Bank]);
 	    return true;
        	}
 		if(mimicXp > 100)
         {
 		auto_log_info("Preparing the mimic for two copied assassins", "blue");
+		use_familiar($familiar[Chest Mimic]);
+	    return true;
+       	}
+		if(mimicXp > 50)
+        {
+		auto_log_info("Preparing the mimic for one copied assassin", "blue");
+		use_familiar($familiar[Chest Mimic]);
 	    return true;
        	}
 	    auto_log_info("Chest mimic insufficiently charged for assassin copying", "red");
